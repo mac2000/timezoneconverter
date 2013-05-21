@@ -1,4 +1,4 @@
-timezoneconverter
-=================
+Time Zone Online Converter
+==========================
 
-convert time zone online
+http://timezoneconverter.mac-blog.org.ua
