@@ -1,0 +1,54 @@
+html, body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	overflow: hidden;
+}
+
+html {
+	width:100%;
+	display: table;
+	text-align: center;
+	margin:auto;
+
+	background: #f7f7f7;
+	background-image: -webkit-radial-gradient(50% 50%, #f7f7f7, #cccccc);
+	background-image: -moz-radial-gradient(50% 50%, #f7f7f7, #cccccc);
+	background-image: -o-radial-gradient(50% 50%, #f7f7f7, #cccccc);
+	background-image: radial-gradient(50% 50%, #f7f7f7, #cccccc);
+}
+
+body {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+output {
+	display: block;
+	margin-top:1em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 21px;
+	line-height: 1.6;
+}
+
+output span {
+	margin-right:.5em;
+	color:#bd1018;
+}
+
+select, input, button {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+	select, input, button {
+		width:80%;
+	}
+}
+
+.hidden {
+	display:none;
+}
