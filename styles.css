@@ -21,15 +21,15 @@ html {
 body {
 	display: table-cell;
 	vertical-align: middle;
+	font:normal 14px/20px sans-serif;
+	color:#333;
 }
 
 output {
 	display: block;
 	margin-top:1em;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 300;
 	font-size: 21px;
-	line-height: 1.6;
+	font-family:monospace;
 }
 
 output span {
@@ -41,11 +41,53 @@ select, input, button {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+	border: 1px solid #aaa;
+	display: inline-block;
+	width: auto;
+	padding: 7px 10px 6px 10px;
+	height: 40px;
+	line-height: 25px;
+	outline: none;
+	text-decoration: none;
+	color:#333;
+	background: white;
+	margin:auto;
+	margin:.5em auto;
+}
+
+select:hover, input:hover, button:hover {
+	border-color: #bbb;
+	outline: none;
+}
+
+select:focus, input:focus, button:focus {
+	border-color: #0074d9;
+	outline: none;
+}
+
+select {
+	padding-right: 6px;
+	padding-left: 7px;
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 0) {
+	select {
+		padding-left: 6px;
+	}
+}
+
+button, button:hover, button:focus {
+	display: inline-block;
+	width: auto;
+	color:#fff;
+	background: #0074d9;
+	border-color: #0074d9;
+	cursor: pointer;
 }
 
 @media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
 	select, input, button {
-		width:80%;
+		width:75%;
 	}
 }
 
